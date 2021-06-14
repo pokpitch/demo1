@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { View, Text, StyleSheet } from 'react-native'
 
 export default function App() {
   return (
@@ -10,56 +10,23 @@ export default function App() {
       justifyContent: 'center',
       alignItems: 'stretch'
       }}>
-      <Text style={{
-        fontSize: 30, 
-        fontWeight: 'bold',
-        backgroundColor: 'purple',
-        flex: 1,
-        textAlign: 'center',
-        textAlignVertical: 'center'
-        }}>
-          Stream I.T. Consulting Ltd.
-        </Text>
-      <Text style={{
-        fontSize: 30, 
-        fontWeight: 'bold',
-        backgroundColor: 'green',
-        flex: 1,
-        textAlign: 'center',
-        textAlignVertical: 'center'
-        }}>
-          Stream I.T. Consulting Ltd.
-        </Text>
-      <Text style={{
-        fontSize: 30, 
-        fontWeight: 'bold',
-        backgroundColor: 'white',
-        flex: 1,
-        textAlign: 'center',
-        textAlignVertical: 'center'
-        }}>
-          Stream I.T. Consulting Ltd.
-        </Text>
-      <Text style={{
-        fontSize: 30, 
-        fontWeight: 'bold',
-        backgroundColor: 'blue',
-        flex: 1,
-        textAlign: 'center',
-        textAlignVertical: 'center'
-        }}>
-          Stream I.T. Consulting Ltd.
-        </Text>
-      <Text style={{
-        fontSize: 30, 
-        fontWeight: 'bold',
-        backgroundColor: 'orange',
-        flex: 1,
-        textAlign: 'center',
-        textAlignVertical: 'center'
-        }}>
-          Stream I.T. Consulting Ltd.
-        </Text>        
+      <Text style={{...styles.text, backgroundColor: 'red'}}>Stream I.T. Consulting Ltd.</Text>
+      <Text style={{...styles.text, backgroundColor: 'blue'}}>Stream I.T. Consulting Ltd.</Text>
+      <Text style={{...styles.text, backgroundColor: 'green'}}>Stream I.T. Consulting Ltd.</Text>
+      <Text style={{...styles.text, backgroundColor: 'orange'}}>Stream I.T. Consulting Ltd.</Text>
+      <Text style={{...styles.text, backgroundColor: 'purple'}}>Stream I.T. Consulting Ltd.</Text>
     </View>
   )
 }
+
+const styles = StyleSheet.create({
+  text: {
+    fontSize: 30,
+    color: 'white',
+    fontWeight: 'bold',
+    backgroundColor: 'purple',
+    flex: 1,
+    textAlign: 'center',
+    textAlignVertical: 'center',
+  },
+});
